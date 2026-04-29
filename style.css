@@ -189,6 +189,7 @@ h1 {
     animation: spin 20s linear infinite;
     pointer-events: none;
     z-index: 0;
+    border-radius: 50%; /* Make rotating frame a circle */
 }
 
 .portal-blue { animation-direction: reverse; }
@@ -491,4 +492,16 @@ h2 {
 
 @keyframes popIn {
     to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes dynamicFloat {
+    0% { transform: translateY(0) scale(1); filter: drop-shadow(0 10px 15px rgba(249, 115, 22, 0.4)); }
+    50% { transform: translateY(-20px) scale(1.08) rotate(3deg); filter: drop-shadow(0 25px 25px rgba(249, 115, 22, 0.6)); }
+    100% { transform: translateY(0) scale(1); filter: drop-shadow(0 10px 15px rgba(249, 115, 22, 0.4)); }
+}
+
+.dynamic-anim {
+    animation: dynamicFloat 3.5s ease-in-out infinite;
+    z-index: 2;
+    position: relative;
 }
