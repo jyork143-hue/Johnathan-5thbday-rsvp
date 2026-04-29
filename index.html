@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miles' 5th Birthday Party RSVP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="background-effects">
+        <div class="orb orb-blue"></div>
+        <div class="orb orb-purple"></div>
+        <div class="orb orb-orange"></div>
+    </div>
+
+    <div class="container">
+        <!-- Header Hero Section -->
+        <section class="hero-card slide-up">
+            <div class="badge fade-in">
+                <span class="badge-text">Miles Morales Spider-Man Inspired</span>
+                <img src="assets/spider_icon_1777427914122.png" alt="Spider Icon" class="badge-icon" />
+                <span class="badge-text">Birthday Party</span>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-image-wrapper pop-in delay-1">
+                    <img src="assets/orange_portal_1777427826561.png" alt="Orange Portal" class="portal portal-orange" />
+                    <img src="assets/media__1777427917693.jpg" alt="Son as Miles Morales" class="profile-img border-orange" />
+                </div>
+                
+                <div class="hero-text fade-in delay-2">
+                    <h1>Swing by for <span class="highlight-blue">Miles</span>'s 5th Birthday!</h1>
+                    <p>We are celebrating with a ninja-style gymnastics party for daycare friends. Expect obstacle courses, climbing, jumping, cake, and Spider-Verse energy!</p>
+                </div>
+
+                <div class="hero-image-wrapper pop-in delay-3">
+                    <img src="assets/blue_portal_1777427840920.png" alt="Blue Portal" class="portal portal-blue" />
+                    <img src="assets/edited_miles.png" alt="Son as Miles Morales" class="profile-img border-blue" />
+                </div>
+            </div>
+
+            <div class="info-grid fade-in delay-4">
+                <div class="info-card">
+                    <i data-lucide="calendar" class="icon-orange"></i>
+                    <div class="info-title">Date</div>
+                    <div class="info-text">February 25, 2023</div>
+                </div>
+                <div class="info-card">
+                    <i data-lucide="clock" class="icon-orange"></i>
+                    <div class="info-title">Time</div>
+                    <div class="info-text">3:00 PM</div>
+                </div>
+                <div class="info-card">
+                    <i data-lucide="map-pin" class="icon-orange"></i>
+                    <div class="info-title">Location</div>
+                    <div class="info-text">Dominique Dawes Academy, Columbia, MD</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="main-grid">
+            <!-- RSVP Form -->
+            <section class="glass-card rsvp-section slide-up delay-5">
+                <img src="assets/spider_icon_1777427914122.png" alt="Spider Icon" class="floating-icon" />
+                <h2>RSVP</h2>
+                <p class="subtitle">Please RSVP so we can confirm the party count, food, and waiver list.</p>
+
+                <div id="success-message" class="success-message hidden">
+                    <i data-lucide="check-circle-2" class="icon-green"></i>
+                    <h3>RSVP received!</h3>
+                    <p>Thank you. Please watch for the waiver link before the party.</p>
+                </div>
+
+                <form id="rsvp-form" class="rsvp-form">
+                    <div class="input-group">
+                        <input type="text" placeholder=" " required />
+                        <label>Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" placeholder=" " required />
+                        <label>Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" placeholder=" " required />
+                        <label>Phone</label>
+                    </div>
+                    <div class="input-group">
+                        <select required>
+                            <option value="" disabled selected>Select an option...</option>
+                            <option>Yes, we will attend</option>
+                            <option>No, we cannot attend</option>
+                            <option>Maybe, please follow up</option>
+                        </select>
+                        <label>Attendance</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea placeholder=" "></textarea>
+                        <label>Food allergies, notes, or questions</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit RSVP</button>
+                </form>
+            </section>
+
+            <!-- Sidebar -->
+            <aside class="sidebar slide-up delay-6">
+                <div class="glass-card notes-card">
+                    <img src="assets/spider_icon_1777427914122.png" alt="Spider Icon" class="floating-icon-small" />
+                    <h2>Important Notes</h2>
+                    <div class="notes-list">
+                        <div class="note-item">
+                            <i data-lucide="shirt" class="icon-blue"></i>
+                            <div>
+                                <h4>Attire</h4>
+                                <p>Kids should wear comfortable clothes for running, climbing, and jumping.</p>
+                            </div>
+                        </div>
+                        <div class="note-item">
+                            <i data-lucide="check-circle-2" class="icon-blue"></i>
+                            <div>
+                                <h4>Waiver Required</h4>
+                                <p>A waiver is required before arrival. The link will be sent once the venue confirms.</p>
+                            </div>
+                        </div>
+                        <div class="note-item">
+                            <i data-lucide="clock" class="icon-blue"></i>
+                            <div>
+                                <h4>Arrival Time</h4>
+                                <p>Please arrive 10 minutes early so the kids can join the group on time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card questions-card">
+                    <h2>Questions?</h2>
+                    <div class="contact-list">
+                        <div class="input-group read-only">
+                            <input type="email" value="parent@example.com" readonly />
+                            <label>Email</label>
+                        </div>
+                        <div class="input-group read-only">
+                            <input type="tel" value="(555) 123-4567" readonly />
+                            <label>Phone</label>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </main>
+        
+        <!-- Cityscape footer -->
+        <img src="assets/cityscape_1777427926978.png" alt="Cityscape" class="cityscape-footer fade-in delay-7" />
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
