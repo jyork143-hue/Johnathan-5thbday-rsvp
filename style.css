@@ -458,8 +458,9 @@ h2 {
 
 /* Accordion Details */
 details {
-    background: rgba(15, 23, 42, 0.7);
-    border: 1px solid var(--card-border);
+    background: rgba(30, 41, 59, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     border-radius: 1rem;
     margin-bottom: 1rem;
     overflow: hidden;
@@ -574,5 +575,23 @@ details[open] summary::after {
     z-index: 2;
     position: relative;
     will-change: transform, box-shadow;
-    transform: translateZ(0);
+}
+
+.notes-card {
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
+
+.location-link {
+    color: var(--text-main);
+    text-decoration: underline;
+    text-decoration-color: var(--orange-primary);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    transition: color 0.2s;
+}
+
+.location-link:hover {
+    color: var(--orange-light);
 }
