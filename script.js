@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    // Add subtle 3D hover effects to glass cards
-    const cards = document.querySelectorAll('.glass-card');
+    // Add subtle 3D hover effects to non-interactive glass cards only
+    const cards = document.querySelectorAll('.glass-card:not(.notes-card):not(.rsvp-section)');
     
     cards.forEach(card => {
         card.addEventListener('mousemove', (e) => {
